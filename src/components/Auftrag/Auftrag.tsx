@@ -23,6 +23,7 @@ export const Auftrag = () => {
             <h2>Bitte wählen Sie Ihren Artikel</h2>
         </div>
 
+
         <div className="outer-container">
             <div className="Hose">
                 <img src={Hose}  />
@@ -66,8 +67,9 @@ export const Auftrag = () => {
             <div className="Sonstiges">
                 <img src={sonstige}  />
             </div>
-        
         </div>
+
+
      </div>
     );
 };
