@@ -1,0 +1,29 @@
+.outer-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Ändern Sie diese Werte entsprechend Ihren Anforderungen */
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px; /* Optional: Abstand zwischen den Grid-Items */
+    height: auto;
+    justify-items: center; /* Zentriert den Inhalt innerhalb der Grid-Items horizontal */
+    align-items: center; /* Zentriert den Inhalt innerhalb der Grid-Items vertikal */
+}
+
+/* Stile für die div-Elemente innerhalb des outer-container */
+.outer-container > div {
+    width: 200px; /* Setzen Sie die gewünschte Breite */
+    height: 200px; /* Setzen Sie die gewünschte Höhe */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc; /* Optional: Rahmen um die div-Elemente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Schatten um die div-Elemente */
+    padding: 10px; /* Optional: Innenabstand */
+    background-color: #f9f9f9; /* Optional: Hintergrundfarbe */
+}
+
+.outer-container img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
