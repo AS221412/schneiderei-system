@@ -19,7 +19,7 @@ import  "../Auftrag/Auftrag.css"
 export const Auftrag = () => {
     return (
      <div>
-        <div>
+        <div className="header">
             <h2>Bitte wählen Sie Ihren Artikel</h2>
         </div>
 

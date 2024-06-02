@@ -1,21 +1,33 @@
+
+.header {
+    position: absolute;
+    top: 120px; /* Passen Sie diesen Wert nach Bedarf an */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 .outer-container {
+    position: relative;
+    margin-left: 250px;
     display: grid;
     grid-template-columns: repeat(7, 1fr); /* Ändern Sie diese Werte entsprechend Ihren Anforderungen */
     grid-template-rows: repeat(2, 1fr);
     gap: 10px; /* Optional: Abstand zwischen den Grid-Items */
     height: auto;
-    justify-items: center; /* Zentriert den Inhalt innerhalb der Grid-Items horizontal */
-    align-items: center; /* Zentriert den Inhalt innerhalb der Grid-Items vertikal */
+    align-items: center;
+    justify-items: center;
+    margin-top: 200px;
+    width: 100px;
 }
 
-/* Stile für die div-Elemente innerhalb des outer-container */
 .outer-container > div {
-    width: 200px; /* Setzen Sie die gewünschte Breite */
-    height: 200px; /* Setzen Sie die gewünschte Höhe */
+    width: 150px; /* Setzen Sie die gewünschte Breite */
+    height: 150px; /* Setzen Sie die gewünschte Höhe */
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc; /* Optional: Rahmen um die div-Elemente */
+    border: 5px solid #ccc; /* Optional: Rahmen um die div-Elemente */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Schatten um die div-Elemente */
     padding: 10px; /* Optional: Innenabstand */
     background-color: #f9f9f9; /* Optional: Hintergrundfarbe */
