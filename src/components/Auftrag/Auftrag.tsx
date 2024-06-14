@@ -19,10 +19,37 @@ import { useNavigate } from "react-router-dom"
 
 export const Auftrag = () => {
 const navigate = useNavigate();
-   const handleClick = () => {
+const Shirtnavigate = useNavigate();
+const Hemdnavigate = useNavigate();
+const Kleidnavigate = useNavigate();
+const Rocknavigate = useNavigate();
+const Anzugnavigate = useNavigate();
+
+   const HosehandleClick = () => {
     return navigate("/Hose");
    } 
 
+   const TShirthandleClick = () => {
+    return Shirtnavigate("/TShirt");
+   } 
+
+   const HemdhandleClick = () => {
+    return Hemdnavigate("/Hemd");
+   } 
+
+
+   const KleidhandleClick = () => {
+    return Kleidnavigate("/Kleid");
+   } 
+
+   const RockhandleClick = () => {
+    return Rocknavigate("/Rock");
+   } 
+
+   const AnzugHandleClick = () => {
+    return Anzugnavigate("/Anzug");
+   } 
+   
 return (
      <div>
         <div className="header">
@@ -31,19 +58,19 @@ return (
 
 
         <div className="outer-container">
-            <div onClick={handleClick} className="Hose">
+            <div onClick={HosehandleClick} className="Hose">
                 <img src={Hose}  />
             </div>
-            <div className="Shirt">
+            <div onClick={TShirthandleClick} className="Shirt">
                 <img src={Shirt}  />
             </div>
-            <div className="Hemd">
+            <div onClick={HemdhandleClick} className="Hemd">
                 <img src={Hemd}  />
             </div>
-            <div className="Kleid">
+            <div onClick={KleidhandleClick}  className="Kleid">
                 <img src={Kleid}  />
             </div>
-            <div className="Rock">
+            <div onClick={RockhandleClick}  className="Rock">
                 <img src={Rock}  />
             </div>
             <div className="Anzug">

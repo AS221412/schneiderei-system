@@ -2,7 +2,7 @@ export const Hose = () => {
 
 return (
 
-<h1>Hallo Welt</h1>
+<h1>Hier kommen Hosen</h1>
 
 ) 
 
