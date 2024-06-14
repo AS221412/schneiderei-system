@@ -73,7 +73,7 @@ return (
             <div onClick={RockhandleClick}  className="Rock">
                 <img src={Rock}  />
             </div>
-            <div className="Anzug">
+            <div onClick={AnzugHandleClick} className="Anzug">
                 <img src={Anzug}  />
             </div>
             <div className="Jacke">
