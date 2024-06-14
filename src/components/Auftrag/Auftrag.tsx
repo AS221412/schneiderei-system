@@ -1,24 +1,27 @@
-import Hose from "../../assets/Hose.png"
-import Shirt from "../../assets/Shirt.png"
-import Hemd from "../../assets/Hemd.png"
-import Kleid from "../../assets/Kleid.png"
-import Rock from "../../assets/Rock.png"
-import Anzug from "../../assets/Anzug.png"
-import Jacke from "../../assets/Jacke.png"
-import Mantel from "../../assets/Mantel.png"
-import Gardinen from "../../assets/Gardine.png"
-import Kissen from "../../assets/Kissen.png"
-import Weste from "../../assets/Weste.png"
-import Pullover from "../../assets/Pullover.png"
-import Tasche from "../../assets/Tasche.png"
-import sonstige from "../../assets/sonstige.png"
-import  "../Auftrag/Auftrag.css"
-import { useNavigate } from "react-router-dom"
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import Hose from "../../assets/mainBilder/Hose.png";
+import Anzug from "../../assets/mainBilder/Anzug.png";
+import Gardinen from "../../assets/mainBilder/Gardine.png";
+import Hemd from "../../assets/mainBilder/Hemd.png";
+import Jacke from "../../assets/mainBilder/Jacke.png";
+import Kissen from "../../assets/mainBilder/Kissen.png";
+import Kleid from "../../assets/mainBilder/Kleid.png";
+import Mantel from "../../assets/mainBilder/Mantel.png";
+import Pullover from "../../assets/mainBilder/Pullover.png";
+import Rock from "../../assets/mainBilder/Rock.png";
+import Shirt from "../../assets/mainBilder/Shirt.png";
+import sonstige from "../../assets/mainBilder/sonstige.png";
+import Tasche from "../../assets/mainBilder/Tasche.png";
+import Weste from "../../assets/mainBilder/Weste.png";
+import "./Auftrag.css";
+
  
 
 
 export const Auftrag = () => {
 const navigate = useNavigate();
+
    const handleClick = () => {
     return navigate("/Hose");
    } 
