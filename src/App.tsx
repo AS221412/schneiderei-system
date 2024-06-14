@@ -1,12 +1,13 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { Auftrag } from "./components/Auftrag/Auftrag";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+  <Auftrag/>
   );
 }
 
 export default App;
+
+
