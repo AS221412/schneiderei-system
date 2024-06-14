@@ -13,11 +13,17 @@ import Pullover from "../../assets/Pullover.png"
 import Tasche from "../../assets/Tasche.png"
 import sonstige from "../../assets/sonstige.png"
 import  "../Auftrag/Auftrag.css"
+import { useNavigate } from "react-router-dom"
  
 
 
 export const Auftrag = () => {
-    return (
+const navigate = useNavigate();
+   const handleClick = () => {
+    return navigate("/Hose");
+   } 
+
+return (
      <div>
         <div className="header">
             <h2>Bitte wählen Sie Ihren Artikel</h2>
@@ -25,7 +31,7 @@ export const Auftrag = () => {
 
 
         <div className="outer-container">
-            <div className="Hose">
+            <div onClick={handleClick} className="Hose">
                 <img src={Hose}  />
             </div>
             <div className="Shirt">
