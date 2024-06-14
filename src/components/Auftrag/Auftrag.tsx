@@ -1,31 +1,55 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import Hose from "../../assets/mainBilder/Hose.png";
-import Anzug from "../../assets/mainBilder/Anzug.png";
-import Gardinen from "../../assets/mainBilder/Gardine.png";
-import Hemd from "../../assets/mainBilder/Hemd.png";
-import Jacke from "../../assets/mainBilder/Jacke.png";
-import Kissen from "../../assets/mainBilder/Kissen.png";
-import Kleid from "../../assets/mainBilder/Kleid.png";
-import Mantel from "../../assets/mainBilder/Mantel.png";
-import Pullover from "../../assets/mainBilder/Pullover.png";
-import Rock from "../../assets/mainBilder/Rock.png";
-import Shirt from "../../assets/mainBilder/Shirt.png";
-import sonstige from "../../assets/mainBilder/sonstige.png";
-import Tasche from "../../assets/mainBilder/Tasche.png";
-import Weste from "../../assets/mainBilder/Weste.png";
-import "./Auftrag.css";
-
+import Hose from "../../assets/Hose.png"
+import Shirt from "../../assets/Shirt.png"
+import Hemd from "../../assets/Hemd.png"
+import Kleid from "../../assets/Kleid.png"
+import Rock from "../../assets/Rock.png"
+import Anzug from "../../assets/Anzug.png"
+import Jacke from "../../assets/Jacke.png"
+import Mantel from "../../assets/Mantel.png"
+import Gardinen from "../../assets/Gardine.png"
+import Kissen from "../../assets/Kissen.png"
+import Weste from "../../assets/Weste.png"
+import Pullover from "../../assets/Pullover.png"
+import Tasche from "../../assets/Tasche.png"
+import sonstige from "../../assets/sonstige.png"
+import  "../Auftrag/Auftrag.css"
+import { useNavigate } from "react-router-dom"
  
 
 
 export const Auftrag = () => {
 const navigate = useNavigate();
+const Shirtnavigate = useNavigate();
+const Hemdnavigate = useNavigate();
+const Kleidnavigate = useNavigate();
+const Rocknavigate = useNavigate();
+const Anzugnavigate = useNavigate();
 
-   const handleClick = () => {
+   const HosehandleClick = () => {
     return navigate("/Hose");
    } 
 
+   const TShirthandleClick = () => {
+    return Shirtnavigate("/TShirt");
+   } 
+
+   const HemdhandleClick = () => {
+    return Hemdnavigate("/Hemd");
+   } 
+
+
+   const KleidhandleClick = () => {
+    return Kleidnavigate("/Kleid");
+   } 
+
+   const RockhandleClick = () => {
+    return Rocknavigate("/Rock");
+   } 
+
+   const AnzugHandleClick = () => {
+    return Anzugnavigate("/Anzug");
+   } 
+   
 return (
      <div>
         <div className="header">
@@ -34,22 +58,22 @@ return (
 
 
         <div className="outer-container">
-            <div onClick={handleClick} className="Hose">
+            <div onClick={HosehandleClick} className="Hose">
                 <img src={Hose}  />
             </div>
-            <div className="Shirt">
+            <div onClick={TShirthandleClick} className="Shirt">
                 <img src={Shirt}  />
             </div>
-            <div className="Hemd">
+            <div onClick={HemdhandleClick} className="Hemd">
                 <img src={Hemd}  />
             </div>
-            <div className="Kleid">
+            <div onClick={KleidhandleClick}  className="Kleid">
                 <img src={Kleid}  />
             </div>
-            <div className="Rock">
+            <div onClick={RockhandleClick}  className="Rock">
                 <img src={Rock}  />
             </div>
-            <div className="Anzug">
+            <div onClick={AnzugHandleClick} className="Anzug">
                 <img src={Anzug}  />
             </div>
             <div className="Jacke">
