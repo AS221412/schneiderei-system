@@ -1,4 +1,4 @@
-export const TShirt = () => {
+export const Jacke = () => {
 
 return (
 

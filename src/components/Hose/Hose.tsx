@@ -12,7 +12,7 @@ import KnopfErsetzen from "../../assets/HoseBilder/KnopfErsetzen.png";
 import KnopfLochReparieren from "../../assets/HoseBilder/KnopflochReparieren.png";
 import Gürtelschlaufe from "../../assets/HoseBilder/GürtelSchlaufe.png";
 import sonstige from "../../assets/mainBilder/sonstige.png"
-import "./Auftrag.css";
+import "./Hose.css";
 
 export const Hose = () => {
 

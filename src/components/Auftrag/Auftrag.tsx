@@ -1,53 +1,49 @@
-import Hose from "../../assets/Hose.png"
-import Shirt from "../../assets/Shirt.png"
-import Hemd from "../../assets/Hemd.png"
-import Kleid from "../../assets/Kleid.png"
-import Rock from "../../assets/Rock.png"
-import Anzug from "../../assets/Anzug.png"
-import Jacke from "../../assets/Jacke.png"
-import Mantel from "../../assets/Mantel.png"
-import Gardinen from "../../assets/Gardine.png"
-import Kissen from "../../assets/Kissen.png"
-import Weste from "../../assets/Weste.png"
-import Pullover from "../../assets/Pullover.png"
-import Tasche from "../../assets/Tasche.png"
-import sonstige from "../../assets/sonstige.png"
-import  "../Auftrag/Auftrag.css"
+import Hose from "../../assets/mainBilder/Hose.png"
+import Shirt from "../../assets/mainBilder/Shirt.png"
+import Hemd from "../../assets/mainBilder/Hemd.png"
+import Kleid from "../../assets/mainBilder/Kleid.png"
+import Rock from "../../assets/mainBilder/Rock.png"
+import Anzug from "../../assets/mainBilder/Anzug.png"
+import Jacke from "../../assets/mainBilder/Jacke.png"  // Überprüfe Groß-/Kleinschreibung
+import Mantel from "../../assets/mainBilder/Mantel.png"
+import Gardinen from "../../assets/mainBilder/Gardine.png"  // Überprüfe Verzeichnis und Schreibweise
+import Kissen from "../../assets/mainBilder/Kissen.png"
+import Weste from "../../assets/mainBilder/Weste.png"  // Überprüfe Verzeichnis und Schreibweise
+import Pullover from "../../assets/mainBilder/Pullover.png"  // Überprüfe Groß-/Kleinschreibung
+import Tasche from "../../assets/mainBilder/Tasche.png"
+import sonstige from "../../assets/mainBilder/sonstige.png"
+import "./Auftrag.css"
 import { useNavigate } from "react-router-dom"
  
 
 
 export const Auftrag = () => {
 const navigate = useNavigate();
-const Shirtnavigate = useNavigate();
-const Hemdnavigate = useNavigate();
-const Kleidnavigate = useNavigate();
-const Rocknavigate = useNavigate();
-const Anzugnavigate = useNavigate();
+
 
    const HosehandleClick = () => {
     return navigate("/Hose");
    } 
 
    const TShirthandleClick = () => {
-    return Shirtnavigate("/TShirt");
+    return navigate("/TShirt");
    } 
 
    const HemdhandleClick = () => {
-    return Hemdnavigate("/Hemd");
+    return navigate("/Hemd");
    } 
 
 
    const KleidhandleClick = () => {
-    return Kleidnavigate("/Kleid");
+    return navigate("/Kleid");
    } 
 
    const RockhandleClick = () => {
-    return Rocknavigate("/Rock");
+    return navigate("/Rock");
    } 
 
    const AnzugHandleClick = () => {
-    return Anzugnavigate("/Anzug");
+    return navigate("/Anzug");
    } 
    
 return (
