@@ -45,6 +45,11 @@ const navigate = useNavigate();
    const AnzugHandleClick = () => {
     return navigate("/Anzug");
    } 
+
+   const JackeHandleClick = () => {
+    return navigate("/Jacke");
+   } 
+   
    
 return (
      <div>
@@ -72,8 +77,8 @@ return (
             <div onClick={AnzugHandleClick} className="Anzug">
                 <img src={Anzug}  />
             </div>
-            <div className="Jacke">
-                <img src={Jacke}  />
+            <div onClick={JackeHandleClick} className="Jacke">
+                <img  src={Jacke}  />
             </div>
             <div className="Mantel">
                 <img src={Mantel}  />
