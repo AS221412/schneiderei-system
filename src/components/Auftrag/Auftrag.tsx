@@ -12,6 +12,7 @@ import Weste from "../../assets/mainBilder/Weste.png"  // Überprüfe Verzeichni
 import Pullover from "../../assets/mainBilder/Pullover.png"  // Überprüfe Groß-/Kleinschreibung
 import Tasche from "../../assets/mainBilder/Tasche.png"
 import sonstige from "../../assets/mainBilder/sonstige.png"
+import Button from '@mui/material/Button';
 import "./Auftrag.css"
 import { useNavigate } from "react-router-dom"
  
@@ -59,48 +60,48 @@ return (
 
 
         <div className="outer-container">
-            <div onClick={HosehandleClick} className="Hose">
+            <Button onClick={HosehandleClick} className="Hose">
                 <img src={Hose}  />
-            </div>
-            <div onClick={TShirthandleClick} className="Shirt">
+            </Button>
+            <Button onClick={TShirthandleClick} className="Shirt">
                 <img src={Shirt}  />
-            </div>
-            <div onClick={HemdhandleClick} className="Hemd">
+            </Button>
+            <Button onClick={HemdhandleClick} className="Hemd">
                 <img src={Hemd}  />
-            </div>
-            <div onClick={KleidhandleClick}  className="Kleid">
+            </Button>
+            <Button onClick={KleidhandleClick}  className="Kleid">
                 <img src={Kleid}  />
-            </div>
-            <div onClick={RockhandleClick}  className="Rock">
+            </Button>
+            <Button onClick={RockhandleClick}  className="Rock">
                 <img src={Rock}  />
-            </div>
-            <div onClick={AnzugHandleClick} className="Anzug">
+            </Button>
+            <Button onClick={AnzugHandleClick} className="Anzug">
                 <img src={Anzug}  />
-            </div>
-            <div onClick={JackeHandleClick} className="Jacke">
+            </Button>
+            <Button onClick={JackeHandleClick} className="Jacke">
                 <img  src={Jacke}  />
-            </div>
-            <div className="Mantel">
+            </Button>
+            <Button className="Mantel">
                 <img src={Mantel}  />
-            </div>
-            <div className="Gardinen">
+            </Button>
+            <Button className="Gardinen">
                 <img src={Gardinen}  />
-            </div>
-            <div className="Kissen">
+            </Button>
+            <Button className="Kissen">
                 <img src={Kissen}  />
-            </div>
-            <div className="Weste">
+            </Button>
+            <Button className="Weste">
                 <img src={Weste}  />
-            </div>
-            <div className="Pullover">
+            </Button>
+            <Button className="Pullover">
                 <img src={Pullover}  />
-            </div>
-            <div className="Tasche">
+            </Button>
+            <Button className="Tasche">
                 <img src={Tasche}  />
-            </div>
-            <div className="Sonstiges">
+            </Button>
+            <Button className="Sonstiges">
                 <img src={sonstige}  />
-            </div>
+            </Button>
         </div>
 
 
