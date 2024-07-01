@@ -47,8 +47,13 @@ body {
 
 p{
     position: absolute;
-    margin-bottom: 10rem;
+    margin-bottom: 11rem;
+    text-transform: none;
+    size: 50%;
+    color: black;
 }
+
+
 
 @media (max-width: 1200px) {
     .outer-container {

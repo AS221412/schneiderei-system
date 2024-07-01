@@ -9,6 +9,7 @@ import {Kleid} from "./components/Kleid/Kleid"
 import {Rock} from "./components/Rock/Rock"
 import {Anzug} from "./components/Anzug/Anzug"
 import {Jacke} from "./components/Jacke/Jacke"
+import {Leistung} from "./components/Leistung/Leistung"
 import "./App.css";
 
 
@@ -24,6 +25,8 @@ function App() {
         <Route path="/Rock" element = {<Rock />} />
         <Route path="/Anzug" element = {<Anzug />} />
         <Route path="/Jacke" element = {<Jacke />} />
+        <Route path="/Leistung" element = {<Leistung />} />
+
       </Routes>
     </Router>
   );
